@@ -115,17 +115,20 @@ printf("\nEnter size of your new array : ");
 int newsize;
 scanf("%d",&newsize);
 
-int *ptr = paddedCopy(arr,oldsize,newsize);
 
-printf("\nAfter Copying Elements of new array are : ");
+int *ptr=paddedCopy(arr,oldsize,newsize);
 
 for(int i=0 ; i<newsize ; i++){
 
 printf(" %d ",*ptr);
 
+ptr++;
+
 }
+
+} 
+
 
 }
 
 
-}

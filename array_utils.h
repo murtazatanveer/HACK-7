@@ -5,7 +5,7 @@
 /* Q1 : */int contains(const int *arr, int size, int x);
 /* Q2 : */int containsWithin( int *arr, int size, int x, int i, int j);
 /* Q4 : */void reverse(int *arr, int size);
-/* Q3 : */int *paddedCopy(const int *arr, int oldsize, int newsize);
+/* Q3 : */int *paddedCopy(int *arr, int oldsize, int newsize);
 
 
 // Exercises : Question No 1
@@ -91,6 +91,39 @@ printf(" %d ",*cpy_2);
 cpy_2++;
 
 }
+
+}
+
+// Question No : 3 
+
+int *paddedCopy(int *arr, int oldsize, int newsize){
+
+int new_arr[newsize];
+
+if(newsize > oldsize){
+
+    printf("\nNew Array Papped Out with zeros\n");
+
+for(int i=0;i<newsize;i++){
+
+new_arr[i]=0;
+
+}
+
+}
+
+else{
+
+for(int i=0;i<newsize;i++){
+
+new_arr[i] = *arr;
+arr++;
+
+}
+
+}
+
+return new_arr;
 
 }
 
