@@ -129,6 +129,31 @@ ptr++;
 } 
 
 
+// Question : 5
+
+
+if(choice==5){
+
+int size;
+printf("\nEnter size of your array : ");
+scanf("%d",&size);
+
+int arr[size];
+
+printf("\nEnter Elements of Your array with widespace : ");
+
+for(int i=0;i<size;i++){
+
+scanf("%d",&arr[i]);
+
+}
+
+printf("\nAfter Copying, elements of new array are : ");
+
+int *p = reverseCopy(arr,size);
+
+} 
+
 }
 
 

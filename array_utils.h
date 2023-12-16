@@ -3,9 +3,14 @@
 #define false 0
 
 /* Q1 : */int contains(const int *arr, int size, int x);
+
 /* Q2 : */int containsWithin( int *arr, int size, int x, int i, int j);
+
 /* Q4 : */void reverse(int *arr, int size);
+
 /* Q3 : */int *paddedCopy(int *arr, int oldsize, int newsize);
+
+/* Q5 : */int * reverseCopy(int *arr, int size);
 
 
 // Exercises : Question No 1
@@ -127,3 +132,8 @@ return new_arr;
 
 }
 
+int *reverseCopy(int *arr, int size){
+
+
+
+}
