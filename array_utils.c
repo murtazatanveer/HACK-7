@@ -70,9 +70,9 @@ printf("\nResult : %d",containsWithin(arr, size, x, i, j));
 
 }
 
-// Question : 3
+// Question : 4
 
-if(choice==3){
+if(choice==4){
 
 int size;
 printf("\nEnter size of your array : ");
