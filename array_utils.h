@@ -2,9 +2,11 @@
 #define true 1
 #define false 0
 
-// Exercises : Question No 1
-
 int contains(const int *arr, int size, int x);
+int containsWithin(const int *arr, int size, int x, int i, int j);
+
+
+// Exercises : Question No 1
 
 int contains(const int *arr, int size, int x){
 
@@ -24,6 +26,17 @@ return false;
 
 }
 
+// Question No : 2
+
+
+int containsWithin(const int *arr, int size, int x, int i, int j){
+
+
+
+
+
+    
+}
 
 
 
