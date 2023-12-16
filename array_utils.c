@@ -29,7 +29,7 @@ int x;
 printf("\nEnter Element of array you want to search : ");
 scanf("%d",&x);
 
-printf("\nResult : %s",contains(arr , size , x));
+printf("\nResult : %d",contains(arr , size , x));
 
 }
 
