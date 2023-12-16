@@ -92,8 +92,40 @@ reverse(arr,size);
 
 }
 
+// Question : 3
 
 
+if(choice==3){
+
+int oldsize;
+printf("\nEnter size of your array : ");
+scanf("%d",&oldsize);
+
+int arr[oldsize];
+
+printf("\nEnter Elements of Your array with widespace : ");
+
+for(int i=0;i<oldsize;i++){
+
+scanf("%d",&arr[i]);
+
+}
+
+printf("\nEnter size of your new array : ");
+int newsize;
+scanf("%d",&newsize);
+
+int *ptr = paddedCopy(arr,oldsize,newsize);
+
+printf("\nAfter Copying Elements of new array are : ");
+
+for(int i=0 ; i<newsize ; i++){
+
+printf(" %d ",*ptr);
+
+}
+
+}
 
 
 }

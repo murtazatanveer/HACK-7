@@ -5,6 +5,7 @@
 /* Q1 : */int contains(const int *arr, int size, int x);
 /* Q2 : */int containsWithin( int *arr, int size, int x, int i, int j);
 /* Q4 : */void reverse(int *arr, int size);
+/* Q3 : */int *paddedCopy(const int *arr, int oldsize, int newsize);
 
 
 // Exercises : Question No 1
@@ -92,6 +93,4 @@ cpy_2++;
 }
 
 }
-
-
 
