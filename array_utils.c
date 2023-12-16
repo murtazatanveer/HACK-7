@@ -70,4 +70,30 @@ printf("\nResult : %d",containsWithin(arr, size, x, i, j));
 
 }
 
+// Question : 3
+
+if(choice==3){
+
+int size;
+printf("\nEnter size of your array : ");
+scanf("%d",&size);
+
+int arr[size];
+
+printf("\nEnter Elements of Your array with widespace : ");
+
+for(int i=0;i<size;i++){
+
+scanf("%d",&arr[i]);
+
+}
+
+reverse(arr,size);
+
+}
+
+
+
+
+
 }

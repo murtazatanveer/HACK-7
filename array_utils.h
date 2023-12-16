@@ -2,8 +2,9 @@
 #define true 1
 #define false 0
 
-int contains(const int *arr, int size, int x);
-int containsWithin( int *arr, int size, int x, int i, int j);
+/* Q1 : */int contains(const int *arr, int size, int x);
+/* Q2 : */int containsWithin( int *arr, int size, int x, int i, int j);
+/* Q4 : */void reverse(int *arr, int size);
 
 
 // Exercises : Question No 1
@@ -43,6 +44,15 @@ return true;
 }
 
 return false;
+
+}
+
+// Question No : 4
+
+void reverse(int *arr, int size){
+
+
+
 
 
 }
