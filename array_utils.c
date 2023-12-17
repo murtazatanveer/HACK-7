@@ -112,13 +112,17 @@ scanf("%d",&arr[i]);
 }
 
 printf("\nEnter size of your new array : ");
+
 int newsize;
 scanf("%d",&newsize);
 
+int new_arr[newsize];
 
-int *ptr=paddedCopy(arr,oldsize,newsize);
+int *ptr = paddedCopy(arr,oldsize,newsize,new_arr);
 
-for(int i=0 ; i<newsize ; i++){
+printf("\nAfter Copying, Elements of new array is : ");
+
+for(int i=0;i<newsize;i++){
 
 printf(" %d ",*ptr);
 
@@ -126,13 +130,13 @@ ptr++;
 
 }
 
-} 
+}
 
 
 // Question : 5
 
 
-if(choice==5){
+/*if(choice==5){
 
 int size;
 printf("\nEnter size of your array : ");
@@ -152,7 +156,15 @@ printf("\nAfter Copying, elements of new array are : ");
 
 int *p = reverseCopy(arr,size);
 
-} 
+for(int i = 0; i<size;i++){
+
+printf(" %d ",*p);
+
+p++;
+
+}
+
+} */
 
 }
 

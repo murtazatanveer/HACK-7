@@ -8,7 +8,7 @@
 
 /* Q4 : */void reverse(int *arr, int size);
 
-/* Q3 : */int *paddedCopy(int *arr, int oldsize, int newsize);
+/* Q3 : */int *paddedCopy();
 
 /* Q5 : */int * reverseCopy(int *arr, int size);
 
@@ -101,28 +101,37 @@ cpy_2++;
 
 // Question No : 3 
 
-int *paddedCopy(int *arr, int oldsize, int newsize){
+int *paddedCopy(int *arr, int oldsize, int newsize,int *new_arr){
 
-int new_arr[newsize];
+
+int *cpy = arr;
+
+int *cpy_2 = new_arr;
 
 if(newsize > oldsize){
 
-    printf("\nNew Array Papped Out with zeros\n");
-
+  
 for(int i=0;i<newsize;i++){
 
-new_arr[i]=0;
+*cpy_2 = 0;
+
+cpy_2++;
 
 }
+
 
 }
 
 else{
 
+    
 for(int i=0;i<newsize;i++){
 
-new_arr[i] = *arr;
-arr++;
+ *cpy_2 = *cpy;
+
+cpy++;
+
+cpy_2++;
 
 }
 
@@ -132,8 +141,20 @@ return new_arr;
 
 }
 
-int *reverseCopy(int *arr, int size){
+// Question No : 5
 
+/*int *reverseCopy(int *arr, int size){
 
+int arr_new[size];
+
+for(int i=(size-1); i>=0 ;i++){
+
+arr_new[i] = *arr;
+
+arr++;
 
 }
+
+return arr_new;
+
+}*/
