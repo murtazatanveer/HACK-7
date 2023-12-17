@@ -57,43 +57,20 @@ return false;
 
 void reverse(int *arr, int size){
 
-int condition;
+    int rev_arr[size];
 
-if(size%2==0){
+for(int i=(size-1); i>=0; i--  ){
 
-    condition = size / 2;
-
-}
-
-else{
-
-condition = (size-1) / 2;
-
-}
-
-int *cpy = arr;
-int *cpy_2 = arr;
-int temp;
-
-for(int i=0; i<condition; i++){
-
-temp = *arr;
-
-*arr = *(cpy + (size-1-i));
-
-*(cpy + (size-1-i)) = temp;
-
+rev_arr[i] = *arr;
 arr++;
 
 }
 
-printf("\nAfter Reverse of array its elements are : ");
+printf("\nReverse of array is : ");
 
-for(int i=0; i<size; i++){
+for(int i=0;i<size;i++){
 
-printf(" %d ",*cpy_2);
-
-cpy_2++;
+printf(" %d ",rev_arr[i]);
 
 }
 
@@ -141,9 +118,10 @@ return new_arr;
 
 }
 
+
 // Question No : 5
 
-/*int *reverseCopy(int *arr, int size){
+int *reverseCopy(int *arr, int size){
 
 int arr_new[size];
 
@@ -157,4 +135,4 @@ arr++;
 
 return arr_new;
 
-}*/
+}
