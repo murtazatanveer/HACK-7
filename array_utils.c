@@ -136,7 +136,7 @@ ptr++;
 // Question : 5
 
 
-/*if(choice==5){
+if(choice==5){
 
 int size;
 printf("\nEnter size of your array : ");
@@ -152,7 +152,7 @@ scanf("%d",&arr[i]);
 
 }
 
-printf("\nAfter Copying, elements of new array are : ");
+printf("\nReverse of array is :");
 
 int *p = reverseCopy(arr,size);
 
@@ -164,7 +164,7 @@ p++;
 
 }
 
-} */
+}
 
 }
 

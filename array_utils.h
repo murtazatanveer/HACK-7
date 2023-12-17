@@ -123,16 +123,36 @@ return new_arr;
 
 int *reverseCopy(int *arr, int size){
 
-int arr_new[size];
+int condition;
 
-for(int i=(size-1); i>=0 ;i++){
+if(size%2==0){
 
-arr_new[i] = *arr;
-
-arr++;
+    condition = size / 2;
 
 }
 
-return arr_new;
+else{
+
+condition = (size-1) / 2;
+
+}
+
+int *cpy = arr;
+int *cpy_2 = arr;
+int temp;
+
+for(int i=0; i<condition; i++){
+
+temp = *cpy;
+
+*cpy = *(cpy_2 + (size-1-i));
+
+*(cpy_2 + (size-1-i)) = temp;
+
+cpy++;
+
+}
+
+return arr;
 
 }
