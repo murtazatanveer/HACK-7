@@ -52,22 +52,34 @@ return false;
 
 void reverse(int *arr, int size){
 
-    int rev_arr[size];
+ int condition;
 
-    int *cpy_arr = arr;
+if(size%2==0){
 
-for(int i=(size-1); i>=0; i-- ){
-
-rev_arr[i] = *cpy_arr;
-cpy_arr++;
+    condition = size / 2;
 
 }
 
-for(int i=0;i<size;i++){
+else{
 
-*arr = rev_arr[i];
+condition = (size-1) / 2;
 
-    arr++;
+}
+
+int *cpy = arr;
+int *cpy_2 = arr;
+int temp;
+
+for(int i=0; i<condition; i++){
+
+temp = *cpy;
+
+*cpy = *(cpy_2 + (size-1-i));
+
+*(cpy_2 + (size-1-i)) = temp;
+
+cpy++;
+
 }
 
 
@@ -113,37 +125,7 @@ return dyn_arr;
 
 int *reverseCopy(const *arr, int size){
 
-int condition;
 
-if(size%2==0){
-
-    condition = size / 2;
-
-}
-
-else{
-
-condition = (size-1) / 2;
-
-}
-
-int *cpy = arr;
-int *cpy_2 = arr;
-int temp;
-
-for(int i=0; i<condition; i++){
-
-temp = *cpy;
-
-*cpy = *(cpy_2 + (size-1-i));
-
-*(cpy_2 + (size-1-i)) = temp;
-
-cpy++;
-
-}
-
-return arr;
 
 }
 
