@@ -27,7 +27,7 @@ return false;
 
 // Question No : 2
 
-int containsWithin( const int *arr, int size, int x, int i, int j){
+int containsWithin( int *arr, int size, int x, int i, int j){
 
 int *arr_cpy=arr;
 
@@ -87,7 +87,7 @@ cpy++;
 
 // Question No : 3 
 
-int *paddedCopy(const *arr, int oldsize, int newsize){
+int *paddedCopy(const int *arr, int oldsize, int newsize){
 
 
 
@@ -123,10 +123,10 @@ return dyn_arr;
 
 // Question No : 5
 
-int *reverseCopy(const *arr, int size){
+int *reverseCopy(const int *arr, int size){
 
 int *dyn_arr = (int*) malloc(size * 4);
-int *cpy_dyn_arr;
+int *cpy_dyn_arr=dyn_arr;
 
 for(int i = (size-1); i>=0; i--){
 
