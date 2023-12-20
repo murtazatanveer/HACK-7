@@ -62,6 +62,12 @@ cpy_arr++;
 
 }
 
+for(int i=0;i<size;i++){
+
+*arr = rev_arr[i];
+
+    arr++;
+}
 
 
 }
