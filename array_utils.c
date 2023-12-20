@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 #include "array_utils.h"
 
 #define true 1
@@ -74,21 +75,18 @@ for(int i=0;i<size;i++){
 
 // Question No : 3 
 
-int *paddedCopy(const *arr, int oldsize, int newsize,int *new_arr){
+int *paddedCopy(const *arr, int oldsize, int newsize){
 
 
-int *cpy = arr;
 
-int *cpy_2 = new_arr;
+int *dyn_arr = (int*) malloc(4*newsize);
 
 if(newsize > oldsize){
 
   
 for(int i=0;i<newsize;i++){
 
-*cpy_2 = 0;
-
-cpy_2++;
+dyn_arr[i] = 0;
 
 }
 
@@ -100,17 +98,13 @@ else{
     
 for(int i=0;i<newsize;i++){
 
- *cpy_2 = *cpy;
-
-cpy++;
-
-cpy_2++;
+ dyn_arr[i] = arr[i];
 
 }
 
 }
 
-return new_arr;
+return dyn_arr;
 
 }
 
