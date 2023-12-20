@@ -125,7 +125,16 @@ return dyn_arr;
 
 int *reverseCopy(const *arr, int size){
 
+int *dyn_arr = (int*) malloc(size * 4);
+int *cpy_dyn_arr;
 
+for(int i = (size-1); i>=0; i--){
+
+*cpy_dyn_arr = arr[i];
+cpy_dyn_arr++;
+}
+
+return dyn_arr;
 
 }
 
